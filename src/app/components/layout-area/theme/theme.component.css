@@ -1,0 +1,9 @@
+div{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+button{
+    border: none;
+    background-color: var(--bg-color);
+}

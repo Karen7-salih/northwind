@@ -39,6 +39,10 @@ public async addProduct(product: ProductModel) {
   const dbProduct = await firstValueFrom(observable);
   console.log(dbProduct);
 }
+public async deleteProduct(id: number) {
+  const observable = this.http.delete<ProductModel>(environment.productsUrl + id);
+  await firstValueFrom(observable);
+}
 
 public async updateProduct(product: ProductModel) {
   const formData = new FormData();

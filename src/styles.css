@@ -1,9 +1,25 @@
+/* styles.css */
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg-color: linear-gradient(90deg, hwb(72 77% 3%), white);
+  }
+  
+.dark-theme {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-bg-color: linear-gradient(90deg, hwb(240 20% 20%), hwb(0 0% 20%));
+
+  }
+  
+
+
 html, body {
     margin: 0;
     text-align: center;
     height: 100%;
-    background-image: linear-gradient(hsla(0, 100%, 81%, 0.811) , lab(100% 0.01 -0.01));
-
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 a {

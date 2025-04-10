@@ -2,7 +2,7 @@
     width: 300px;
     display: inline-flex;
     text-align: left;
-    background-image: linear-gradient(90deg, hwb(72 77% 3%), white);
+    background-image: var(--card-bg-color);
     margin: 10px;
     padding: 10px;
     border: 1px solid black;

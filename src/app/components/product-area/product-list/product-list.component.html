@@ -1,4 +1,6 @@
 <div>
-    <app-product-card *ngFor="let p of products" [product]="p"></app-product-card>
-
+    <app-product-card *ngFor="let p of pagedProdects" [product]="p"></app-product-card>
+    <hr/>
+    <button (click)="prev()">◀</button>
+    <button (click)="next()">▶</button>
 </div>
