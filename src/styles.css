@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    background-image: linear-gradient(hsla(0, 100%, 81%, 0.811) , lab(100% 0.01 -0.01));
+
+}
+
+a {
+    color: #855860;
+}
+
+form {
+    width: 300px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    text-align: left;
+}
+form input, form button {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+}

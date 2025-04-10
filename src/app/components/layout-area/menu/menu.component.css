@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+.active-link {
+    color: #ff6200;       /* Or any color you want */
+    font-weight: bold;    /* Optional */
+    text-decoration: underline; /* Optional */
+    font-family: Lucida Handwriting;
+  }
+  

@@ -1,0 +1,11 @@
+<div class="card" (click)="navigate()">
+
+    <div>
+        <span>{{product.name}}</span>
+        <span>Price: {{ product.price | currency:'ILS' }}</span>
+        <span>Stock: {{product.stock}}</span>
+    </div>
+    <div>
+        <img [src]="product.imageUrl">
+    </div>
+</div>

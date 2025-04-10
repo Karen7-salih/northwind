@@ -1,0 +1,27 @@
+.card {
+    width: 300px;
+    display: inline-flex;
+    text-align: left;
+    background-image: linear-gradient(90deg, hwb(72 77% 3%), white);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    cursor: pointer;
+}
+img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+div > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div > div:last-child {
+    margin-left: auto;
+}

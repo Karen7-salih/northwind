@@ -1,0 +1,19 @@
+div {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-columns: 1fr 5fr; /*fr - fraction - חלק */
+}
+
+header, footer {
+    grid-column: span 2 ; /* תתפרס על שתי עמודות */
+}
+
+main {
+    overflow: auto; /* display scroller if too much content */
+}
+
+div , header , aside , main , footer {
+    border: 1px solid black
+}
