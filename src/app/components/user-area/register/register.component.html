@@ -1,0 +1,14 @@
+<div>
+    <form (submit)="send()">
+        <label>First name: </label>
+        <input type="text" name="firstName" [(ngModel)]="user.firstName">
+        <label>Last name: </label>
+        <input type="text" name="lastName" [(ngModel)]="user.lastName">
+        <label>Email: </label>
+        <input type="text" name="email" [(ngModel)]="user.email">
+        <label>Password: </label>
+        <input type="password" name="password" [(ngModel)]="user.password">
+        <button>Register</button>
+        
+    </form>
+</div>

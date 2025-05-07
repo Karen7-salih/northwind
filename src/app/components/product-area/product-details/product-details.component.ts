@@ -20,13 +20,26 @@ export class ProductDetailsComponent implements OnInit {
     try{
       const id = +this.activatedRoute.snapshot.params["id"];
       this.product = await this.productService.getOneProduct(id);
-      console.log(this.product);
     }
     catch(err: any){
       alert(err.message);
 
     }
     
+  }
+
+  public async deleteMe(){
+    try{
+      const sure = confirm("Are you sure?");
+      if(!sure) return;
+      await this.productService.deleteProduct(this.product.id);
+      alert("product has been deleted")
+      this.router.navigate(["/products"]);
+    }
+    catch(err: any){
+      alert(err.message);
+
+    }
   }
 
 

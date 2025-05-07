@@ -1,0 +1,9 @@
+<div>
+    <form (submit)="send()">
+        <label>Email: </label>
+        <input type="text" name="email" [(ngModel)]="credentials.email">
+        <label>Password: </label>
+        <input type="password" name="password" [(ngModel)]="credentials.password">
+        <button>Login</button>
+    </form>
+</div>

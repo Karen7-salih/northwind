@@ -1,0 +1,14 @@
+<div>
+    <button (click)="gen1()">Generate Number </button>
+    <span >{{num1}}</span>
+    <hr>
+
+    <button (click)="gen2()">Generate Number Delayed</button>
+    <span >{{num2}}</span>
+    <hr>
+
+    <button (click)="gen3()">Generate Number Delayed</button>
+    <span *ngFor="let n of arr">{{n}} | </span>
+    <hr>
+    
+</div>
