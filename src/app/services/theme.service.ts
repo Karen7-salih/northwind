@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ThemeService {
   private activeTheme: 'light-theme' | 'dark-theme' = 'light-theme';
 
-  public constructor() {
+  constructor() {
     const savedTheme = localStorage.getItem('theme') as 'light-theme' | 'dark-theme';
     if (savedTheme) {
       this.setTheme(savedTheme);
@@ -15,14 +15,14 @@ export class ThemeService {
     }
   }
 
-  public setTheme(theme: 'light-theme' | 'dark-theme') {
+  setTheme(theme: 'light-theme' | 'dark-theme') {
     document.body.classList.remove(this.activeTheme);
     document.body.classList.add(theme);
     this.activeTheme = theme;
     localStorage.setItem('theme', theme);
   }
 
-  public toggleTheme() {
+  toggleTheme() {
     this.setTheme(this.activeTheme === 'light-theme' ? 'dark-theme' : 'light-theme');
   }
 

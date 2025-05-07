@@ -27,6 +27,18 @@ export class ProductDetailsComponent implements OnInit {
     }
     
   }
+  public async deleteMe(){
+    try{
+      const sure = confirm("are you sure?");
+      if(!sure) return;
+      await this.productService.deleteProduct(this.product.id);
+      alert("product been deleted");
+      this.router.navigate(["/products"])
+    }catch(err:any){
+      alert(err.message)
+    }
+  }
+  
 
   public async deleteMe(){
     try{

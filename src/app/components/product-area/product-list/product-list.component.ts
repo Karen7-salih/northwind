@@ -20,6 +20,7 @@ export class ProductListComponent implements OnInit {
 
 
     public constructor(private productService: ProductService) { }
+    public currentPage=1;
     public async ngOnInit() {
         try {
             this.products = await this.productService.getAllProducts();
